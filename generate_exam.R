@@ -47,6 +47,8 @@ generate_exam_params <- function(student_id) {
 #' @return String containing formatted exam questions
 generate_questions_text <- function(params) {
   sprintf("
+<h1>FINAL EXAMINATION - STATISTICS AND PROBABILITY</h1>
+
 # Final Examination - Statistics and Probability
 
 ## Question 1: Probability and Discrete Distributions (25 points)
