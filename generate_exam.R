@@ -4,8 +4,11 @@
 #' @param student_id Numeric student ID used as random seed
 #' @return List of parameters for exam questions
 generate_exam_params <- function(student_id) {
+  # Extract digit for random seed
+  # Extract the desired digits from the student ID
+  extracted_id <- paste0(substr(student_id, 2, 3), substr(student_id, 7, 10))
   # Set seed for reproducibility
-  set.seed(as.numeric(student_id))
+  set.seed(as.numeric(extracted_id))
   
   # Question 1 parameters
   q1_params <- list(
