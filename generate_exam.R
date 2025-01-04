@@ -151,9 +151,12 @@ generate_exam <- function(student_id, student_name) {
   header <- sprintf("
 # Final Examination - Statistics and Probability
 
-Student ID: %s
-Student Name: %s
-Date: %s\n\n
+**Student ID**: %s
+
+**Student Name**: %s
+
+**Date**: %s\n\n
+
 ",
 student_id, student_name, format(Sys.Date(), "%Y-%m-%d"))
   
