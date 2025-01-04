@@ -47,9 +47,7 @@ generate_exam_params <- function(student_id) {
 #' @return String containing formatted exam questions
 generate_questions_text <- function(params) {
   sprintf("
-<h1>FINAL EXAMINATION - STATISTICS AND PROBABILITY</h1>
-
-# Final Examination - Statistics and Probability
+# Questions
 
 ## Question 1: Probability and Discrete Distributions (25 points)
 
@@ -150,8 +148,14 @@ generate_exam <- function(student_id, student_name) {
   exam_text <- generate_questions_text(params)
   
   # Add student info header
-  header <- sprintf("Student ID: %s\nStudent Name: %s\nDate: %s\n\n",
-                   student_id, student_name, format(Sys.Date(), "%Y-%m-%d"))
+  header <- sprintf("
+# Final Examination - Statistics and Probability
+
+Student ID: %s
+Student Name: %s
+Date: %s\n\n
+",
+student_id, student_name, format(Sys.Date(), "%Y-%m-%d"))
   
   exam_text <- paste(header, exam_text)
   
