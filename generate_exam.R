@@ -206,10 +206,17 @@ read_in_dataset <- function(file_ID){
 }
 
 get_dataset <- function(){
+  # File IDs
+  sales_data_fID <- "1Vv6LVa79FeMwoq97OcH1VQvd8lZ5LdEp"
+  machine_performance_fID <- "1YAcR5VL-0_zq6aRtwc_AuNJAND81qaU4"
+  product_quality_fID <- "1Vcg9VUwR4NpsKAm_PbGZ-zIHWkBwKnyV"
+  customer_satisfaction_fID <- "1b6GEGVGOMCC2kyT4-q0r1V8WIUhvv702" 
+  # Read in the data
   sales_data <- read_in_dataset(sales_data_fID)
   machine_data <- read_in_dataset(machine_performance_fID)
   quality_data <- read_in_dataset(product_quality_fID)
   satisfaction_data <-read_in_dataset(customer_satisfaction_fID)
+  # Returned data
   return(list(
       sales_data = sales_data,
       machine_data = machine_data,
