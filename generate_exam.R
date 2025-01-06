@@ -190,6 +190,34 @@ generate_solution_template <- function(params) {
   # Not implemented in this version
 }
 
+sales_data_fID <- "1Vv6LVa79FeMwoq97OcH1VQvd8lZ5LdEp"
+machine_performance_fID <- "1YAcR5VL-0_zq6aRtwc_AuNJAND81qaU4"
+product_quality_fID <- "1Vcg9VUwR4NpsKAm_PbGZ-zIHWkBwKnyV"
+customer_satisfaction_fID <- "1b6GEGVGOMCC2kyT4-q0r1V8WIUhvv702" 
+
+#' Read in pre-prepared dataset
+#' @return list of dataset
+read_in_dataset <- function(file_ID){
+  temp_file_path <- tempfile()
+  drive_download(as_id(file_ID), path = temp_file_path, overwrite = TRUE)
+  df <- read_csv(temp_file_path)
+  unlink(temp_file_path)
+  return(df)  
+}
+
+get_dataset <- function(sales_data_fID, machine_performance_fID, product_quality_fID, customer_satisfaction_fID){
+  sales_data <- read_in_dataset(sales_data_fID)
+  machine_data <- read_in_dataset(machine_performance_fID)
+  quality_data <- read_in_dataset(product_quality_fID)
+  satisfaction_data <-read_in_dataset(customer_satisfaction_fID)
+  return(list(
+      sales_data = sales_data,
+      machine_data = machine_data,
+      quality_data = quality_data,
+      satisfaction_data = satisfaction_data
+  ))
+}
+
 # Example usage:
 if(FALSE) {  # Not run by default
   # Generate exam for one student
