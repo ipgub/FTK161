@@ -205,7 +205,7 @@ read_in_dataset <- function(file_ID){
   return(df)  
 }
 
-get_dataset <- function(sales_data_fID, machine_performance_fID, product_quality_fID, customer_satisfaction_fID){
+get_dataset <- function(){
   sales_data <- read_in_dataset(sales_data_fID)
   machine_data <- read_in_dataset(machine_performance_fID)
   quality_data <- read_in_dataset(product_quality_fID)
