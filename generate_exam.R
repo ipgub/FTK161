@@ -99,14 +99,12 @@ For the defect rate analysis:
 
 ## Question 4: Two Sample Hypothesis Testing (25 points)
 
-### Part A (15 points)
+### Part A (10 points)
 Compare customer satisfaction between %s groups:
-1. Test for an effect size of %.2f
 2. Check assumptions and choose appropriate statistical test
 3. Conduct the analysis and interpret results
-4. Calculate and interpret the effect size
 
-### Part B (10 points)
+### Part B (15 points)
 Extend your analysis:
 1. Create appropriate visualizations comparing the groups
 2. Calculate and interpret confidence intervals for the difference
@@ -128,10 +126,10 @@ Remember to:
     params$q2$confidence_level,
     params$q3$defect_rate,
     params$q3$alpha_level,
-    params$q3$batch_size,
+    # params$q3$batch_size,
     params$q2$confidence_level,
-    params$q4$group_names,
-    params$q4$effect_size
+    params$q4$group_names
+    # params$q4$effect_size
   )
 }
 
