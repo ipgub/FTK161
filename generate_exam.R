@@ -101,8 +101,8 @@ For the defect rate analysis:
 
 ### Part A (10 points)
 Compare customer satisfaction between %s groups:
-2. Check assumptions and choose appropriate statistical test
-3. Conduct the analysis and interpret results
+1. Check assumptions and choose appropriate statistical test
+2. Conduct the analysis and interpret results
 
 ### Part B (15 points)
 Extend your analysis:
