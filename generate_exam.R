@@ -84,13 +84,13 @@ Assuming the efficiency data follows a normal distribution:
 
 ## Question 3: Single Sample Hypothesis Testing (25 points)
 
-### Part A (15 points)
+### Part A (10 points)
 The company claims that the defect rate is less than %.1f%%:
 1. Formulate appropriate null and alternative hypotheses
 2. Conduct a hypothesis test using α = %.2f
 3. Provide recommendations based on your analysis
 
-### Part B (10 points)
+### Part B (15 points)
 For the defect rate analysis:
 1. Calculate and interpret the %d%% confidence interval
 2. Create a visualization showing the distribution and confidence interval
