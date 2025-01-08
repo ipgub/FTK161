@@ -54,19 +54,17 @@ generate_questions_text <- function(params) {
 
 ## Question 1: Probability and Discrete Distributions (25 points)
 
-### Part A (10 points)
+### Part A (15 points)
 Using the sales_data dataset:
 1. Calculate the probability of transactions with value above IDR %d
 2. Create a histogram to visualize the distribution of transaction values
 3. Test whether the transaction value distribution follows a Poisson distribution
 4. Interpret your findings in a business context
 
-### Part B (15 points)
+### Part B (10 points)
 An online store has an average of %d order cancellations per day.
 1. Calculate the probability of exactly %d cancellations in one day
 2. Calculate the probability of more than %d cancellations in one day
-3. Simulate cancellation data for 365 days and create a visualization
-4. Compare the theoretical probabilities with your simulation results
 
 ## Question 2: Continuous Distributions (25 points)
 
@@ -90,9 +88,7 @@ Assuming the efficiency data follows a normal distribution:
 The company claims that the defect rate is less than %.1f%%:
 1. Formulate appropriate null and alternative hypotheses
 2. Conduct a hypothesis test using α = %.2f
-3. Calculate and interpret the effect size
-4. Analyze data in batches of %d units
-5. Provide recommendations based on your analysis
+3. Provide recommendations based on your analysis
 
 ### Part B (10 points)
 For the defect rate analysis:
